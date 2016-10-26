@@ -31,7 +31,7 @@ module.exports = (grunt) ->
 		watch:
 			compile:
 				files: sugar
-				tasks: ['coffee', 'concat:dev']
+				tasks: ['coffee', 'uglify']
 
 	# These plugins provide necessary tasks.
 	grunt.loadNpmTasks 'grunt-contrib-coffee'

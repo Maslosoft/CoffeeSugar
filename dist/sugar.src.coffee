@@ -1,4 +1,7 @@
-
+if not @Maslosoft
+	@Maslosoft = {}
+if not @Maslosoft.Sugar
+	@Maslosoft.Sugar = {}
 if Object.keys
   objectKeys = Object.keys
 else

@@ -1,6 +1,14 @@
 (function() {
   var objectKeys;
 
+  if (!this.Maslosoft) {
+    this.Maslosoft = {};
+  }
+
+  if (!this.Maslosoft.Sugar) {
+    this.Maslosoft.Sugar = {};
+  }
+
   if (Object.keys) {
     objectKeys = Object.keys;
   } else {
