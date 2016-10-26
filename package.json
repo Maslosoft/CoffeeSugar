@@ -1,0 +1,25 @@
+{
+  "name": "coffee-sugar",
+  "version": "1.0.0",
+  "description": "Because coffee with sugar *is* better",
+  "main": "dist/sugar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maslosoft/CoffeeSugar.git"
+  },
+  "keywords": [
+    "coffeescript",
+    "sugar",
+    "trait",
+    "traits"
+  ],
+  "author": "Piotr Maselkowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Maslosoft/CoffeeSugar/issues"
+  },
+  "homepage": "https://github.com/Maslosoft/CoffeeSugar#readme"
+}

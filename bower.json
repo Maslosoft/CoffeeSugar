@@ -1,0 +1,23 @@
+{
+  "name": "coffee-sugar",
+  "authors": [
+    "Peter Maselkowski <pmaselkowski@gmail.com>"
+  ],
+  "description": "Because coffee with sugar *is* better",
+  "main": "",
+  "keywords": [
+    "coffeescript",
+    "mixin",
+    "trait",
+    "coffee"
+  ],
+  "license": "MIT",
+  "homepage": "https://maslosoft.com/coffee-sugar/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
