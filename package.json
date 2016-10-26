@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/Maslosoft/CoffeeSugar/issues"
   },
-  "homepage": "https://github.com/Maslosoft/CoffeeSugar#readme"
+  "homepage": "https://github.com/Maslosoft/CoffeeSugar#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
 }

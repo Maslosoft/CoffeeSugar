@@ -1,0 +1,45 @@
+# CoffeScript simple mixin and interface
+
+## Installation
+
+```bash
+bower install coffee-sugar
+```
+
+## Usage
+
+Include `dist/sugar.min.js` or `dist/sugar.js` in Your build.
+
+Assign names to Your taste and needs:
+
+```coffeescript
+mixin = Maslosoft.Sugar.mixin
+implement = Maslosoft.Sugar.implement
+abstract = Maslosoft.Sugar.abstract
+```
+
+Define interface:
+
+```coffeescript
+class MyInterface
+	methodA: abstract
+```
+
+Define mixin:
+
+```coffeescript
+class MyMixin
+	methodA: () ->
+		console.log 'My implementation'
+
+	methodB: () ->
+		console.log 'My extra method'
+```
+
+Use this in class:
+
+```coffeescript
+class MyConcreteClass
+	implement MyInterface
+	mixin MyMixin
+```
