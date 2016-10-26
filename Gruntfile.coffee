@@ -1,6 +1,8 @@
 sugar = [
 	'src/*'
 ]
+examples = sugar.slice 0
+examples.push 'examples/*.coffee'
 
 min = [
 	'dist/sugar.min.js'
@@ -24,6 +26,16 @@ module.exports = (grunt) ->
 					src: sugar
 					dest: 'dist/sugar.js'
 				]
+			examples:
+				options:
+					sourceMap: false
+					join: true
+					expand: true
+				files: [
+					nonull: true
+					src: examples
+					dest: 'examples/examples.js'
+				]
 		uglify:
 			compile:
 				files:
@@ -32,6 +44,10 @@ module.exports = (grunt) ->
 			compile:
 				files: sugar
 				tasks: ['coffee', 'uglify']
+			examples:
+				files: examples
+				tasks: ['coffee']
+
 
 	# These plugins provide necessary tasks.
 	grunt.loadNpmTasks 'grunt-contrib-coffee'
