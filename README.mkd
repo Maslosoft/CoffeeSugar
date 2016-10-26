@@ -43,3 +43,23 @@ class MyConcreteClass
 	implement this, MyInterface
 	mixin this, MyMixin
 ```
+
+## What it really do
+
+### Mixin
+
+Mixin will copy all methods and propertied from mixed class prototype, 
+to used class prototype.
+
+If used class have some methods or properties, these will be taken from this class,
+not mixin.
+
+### Interface
+
+Interface helper will just check if methods from provided interface class
+exists in used class. Check will be performed after mixins and whole object
+evaluation.
+
+### Abstract
+
+Abstract is just a stub method to place it on interface or mixin abstract methods.
