@@ -40,6 +40,6 @@ Use this in class:
 
 ```coffeescript
 class MyConcreteClass
-	implement MyInterface
-	mixin MyMixin
+	implement this, MyInterface
+	mixin this, MyMixin
 ```
